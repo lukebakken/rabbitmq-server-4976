@@ -1,3 +1,3 @@
 # RabbitChannelBugRepro
 
-Reproduction og RabbitMQ bug - TBD
+Reproduction of RabbitMQ bug - TBD
