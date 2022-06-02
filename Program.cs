@@ -27,6 +27,8 @@ using (var connection = factory.CreateConnection())
 
         channel.BasicPublish(string.Empty, "main", messageFromTemp.BasicProperties, messageFromTemp.Body);
         channel.BasicAck(messageFromTemp.DeliveryTag, false);
+
+        Console.WriteLine("Num messages in main: " + channel.MessageCount("main"));
     }
 }
 
