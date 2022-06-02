@@ -11,9 +11,14 @@ using (var connection = factory.CreateConnection())
     using (var channel = connection.CreateModel())
     {
         channel.QueueDeclare("main", true, false, false);
-        channel.QueueDeclare("temp", true, false, false, QuorumQueueArguments);
+        channel.ExchangeDeclare("main", ExchangeType.Fanout, true);
+        channel.QueueBind("main", "main", string.Empty);
 
         channel.BasicPublish(string.Empty, "main", channel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
+
+        channel.QueueDeclare("temp", true, false, false, QuorumQueueArguments);
+        channel.QueueBind("temp", "main", string.Empty);
+        channel.QueueUnbind("main", "main", string.Empty);
 
         var messageFromMain = channel.BasicGet("main", false);
 
@@ -22,6 +27,8 @@ using (var connection = factory.CreateConnection())
 
         channel.QueueDelete("main");
         channel.QueueDeclare("main", true, false, false, QuorumQueueArguments);
+        channel.QueueBind("main", "main", string.Empty);
+
 
         var messageFromTemp = channel.BasicGet("temp", false);
 
