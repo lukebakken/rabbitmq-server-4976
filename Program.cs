@@ -13,6 +13,8 @@ using (var connection = factory.CreateConnection())
 {
     using (var channel = connection.CreateModel())
     {
+        // adding the test message here makes it work as expected
+        //channel.BasicPublish(string.Empty, "main", channel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
         channel.QueueDeclare("temp", true, false, false, QuorumQueueArguments);
         channel.QueueBind("temp", "main", string.Empty);
         channel.QueueUnbind("main", "main", string.Empty);
@@ -31,6 +33,7 @@ using (var connection = factory.CreateConnection())
         channel.BasicPublish(string.Empty, "main", messageFromTemp.BasicProperties, messageFromTemp.Body);
         channel.BasicAck(messageFromTemp.DeliveryTag, false);
 
+        //using the channel from this point on will throw
         Console.WriteLine("Num messages in main: " + channel.MessageCount("main"));
     }
 }
@@ -40,6 +43,20 @@ Console.ReadLine();
 
 void SetupQueues(ConnectionFactory factory)
 {
+    using (var connection = factory.CreateConnection())
+    {
+        using (var channel = connection.CreateModel())
+        {
+            try
+            {
+                channel.QueueDelete("main");
+            }
+            catch (Exception)
+            {
+            }
+        }
+    }
+
     using (var connection = factory.CreateConnection())
     {
         using (var channel = connection.CreateModel())
