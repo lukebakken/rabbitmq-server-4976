@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelBugRepro", "ChannelBugRepro.csproj", "{01302C94-79F2-4251-BBF8-CD37F44A8DBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01302C94-79F2-4251-BBF8-CD37F44A8DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01302C94-79F2-4251-BBF8-CD37F44A8DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01302C94-79F2-4251-BBF8-CD37F44A8DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01302C94-79F2-4251-BBF8-CD37F44A8DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D40ED6D-E236-47EA-A8C5-B1BD9E724A69}
+	EndGlobalSection
+EndGlobal
