@@ -6,16 +6,13 @@ var factory = new ConnectionFactory
     Uri = new Uri("amqp://guest:guest@localhost")
 };
 
+SetupQueues(factory);
+AddTestMessage(factory);
+
 using (var connection = factory.CreateConnection())
 {
     using (var channel = connection.CreateModel())
     {
-        channel.QueueDeclare("main", true, false, false);
-        channel.ExchangeDeclare("main", ExchangeType.Fanout, true);
-        channel.QueueBind("main", "main", string.Empty);
-
-        channel.BasicPublish(string.Empty, "main", channel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
-
         channel.QueueDeclare("temp", true, false, false, QuorumQueueArguments);
         channel.QueueBind("temp", "main", string.Empty);
         channel.QueueUnbind("main", "main", string.Empty);
@@ -29,7 +26,6 @@ using (var connection = factory.CreateConnection())
         channel.QueueDeclare("main", true, false, false, QuorumQueueArguments);
         channel.QueueBind("main", "main", string.Empty);
 
-
         var messageFromTemp = channel.BasicGet("temp", false);
 
         channel.BasicPublish(string.Empty, "main", messageFromTemp.BasicProperties, messageFromTemp.Body);
@@ -42,5 +38,27 @@ using (var connection = factory.CreateConnection())
 Console.WriteLine("Done");
 Console.ReadLine();
 
+void SetupQueues(ConnectionFactory factory)
+{
+    using (var connection = factory.CreateConnection())
+    {
+        using (var channel = connection.CreateModel())
+        {
+            channel.QueueDeclare("main", true, false, false);
+            channel.ExchangeDeclare("main", ExchangeType.Fanout, true);
+            channel.QueueBind("main", "main", string.Empty);
+        }
+    }
+}
 
+void AddTestMessage(ConnectionFactory factory)
+{
+    using (var connection = factory.CreateConnection())
+    {
+        using (var channel = connection.CreateModel())
+        {
+            channel.BasicPublish(string.Empty, "main", channel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
+        }
+    }
+}
 
