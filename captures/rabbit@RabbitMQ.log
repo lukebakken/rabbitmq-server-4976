@@ -1,0 +1,430 @@
+2022-06-02 18:28:20.446000-04:00 [notice] <0.220.0> Logging: configured log handlers are now ACTIVE
+2022-06-02 18:28:22.637000-04:00 [info] <0.220.0> ra: starting system quorum_queues
+2022-06-02 18:28:22.637000-04:00 [info] <0.220.0> starting Ra system: quorum_queues in directory: c:/Users/Brandon/AppData/Roaming/RabbitMQ/db/rabbit@RabbitMQ-mnesia/quorum/rabbit@RabbitMQ
+2022-06-02 18:28:22.637000-04:00 [info] <0.285.0> ra system 'quorum_queues' running pre init for 0 registered servers
+2022-06-02 18:28:22.637000-04:00 [info] <0.288.0> ra: meta data store initialised for system quorum_queues. 0 record(s) recovered
+2022-06-02 18:28:22.637000-04:00 [notice] <0.298.0> WAL: ra_log_wal init, open tbls: ra_log_open_mem_tables, closed tbls: ra_log_closed_mem_tables
+2022-06-02 18:28:22.653000-04:00 [info] <0.220.0> ra: starting system coordination
+2022-06-02 18:28:22.653000-04:00 [info] <0.220.0> starting Ra system: coordination in directory: c:/Users/Brandon/AppData/Roaming/RabbitMQ/db/rabbit@RabbitMQ-mnesia/coordination/rabbit@RabbitMQ
+2022-06-02 18:28:22.653000-04:00 [info] <0.332.0> ra system 'coordination' running pre init for 0 registered servers
+2022-06-02 18:28:22.653000-04:00 [info] <0.333.0> ra: meta data store initialised for system coordination. 0 record(s) recovered
+2022-06-02 18:28:22.653000-04:00 [notice] <0.338.0> WAL: ra_coordination_log_wal init, open tbls: ra_coordination_log_open_mem_tables, closed tbls: ra_coordination_log_closed_mem_tables
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0> 
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  Starting RabbitMQ 3.10.4 on Erlang 25.0 [jit]
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  Copyright (c) 2007-2022 VMware, Inc. or its affiliates.
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0> 
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  node           : rabbit@RabbitMQ
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  home dir       : c:/Windows/system32/config/systemprofile
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  config file(s) : c:/Users/Brandon/AppData/Roaming/RabbitMQ/advanced.config
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>                 : c:/Users/Brandon/AppData/Roaming/RabbitMQ/rabbitmq.conf
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  cookie hash    : REcm+HSvmGteIFhhY9EsoA==
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  log(s)         : <stdout>
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>                 : c:/Users/Brandon/AppData/Roaming/RabbitMQ/log/rabbit@RabbitMQ.log
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>                 : c:/Users/Brandon/AppData/Roaming/RabbitMQ/log/rabbit@RabbitMQ_upgrade.log
+2022-06-02 18:28:22.669000-04:00 [info] <0.220.0>  database dir   : c:/Users/Brandon/AppData/Roaming/RabbitMQ/db/rabbit@RabbitMQ-mnesia
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags: list of feature flags found:
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [x] classic_mirrored_queue_version
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [ ] drop_unroutable_metric
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [ ] empty_basic_get_metric
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [x] implicit_default_bindings
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [x] maintenance_mode_status
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [x] quorum_queue
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [x] stream_queue
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [x] user_limits
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags:   [x] virtual_host_metadata
+2022-06-02 18:28:22.810000-04:00 [info] <0.220.0> Feature flags: feature flag states written to disk: yes
+2022-06-02 18:28:22.889000-04:00 [info] <0.220.0> Running boot step pre_boot defined by app rabbit
+2022-06-02 18:28:22.889000-04:00 [info] <0.220.0> Running boot step rabbit_global_counters defined by app rabbit
+2022-06-02 18:28:22.889000-04:00 [info] <0.220.0> Running boot step rabbit_osiris_metrics defined by app rabbit
+2022-06-02 18:28:22.889000-04:00 [info] <0.220.0> Running boot step rabbit_core_metrics defined by app rabbit
+2022-06-02 18:28:22.889000-04:00 [info] <0.220.0> Running boot step rabbit_alarm defined by app rabbit
+2022-06-02 18:28:22.905000-04:00 [info] <0.348.0> Memory high watermark set to 1449 MiB (1519555379 bytes) of 3622 MiB (3798888448 bytes) total
+2022-06-02 18:28:23.303000-04:00 [info] <0.350.0> Enabling free disk space monitoring
+2022-06-02 18:28:23.303000-04:00 [info] <0.350.0> Disk free limit set to 50MB
+2022-06-02 18:28:23.680000-04:00 [info] <0.220.0> Running boot step code_server_cache defined by app rabbit
+2022-06-02 18:28:23.680000-04:00 [info] <0.220.0> Running boot step file_handle_cache defined by app rabbit
+2022-06-02 18:28:23.680000-04:00 [info] <0.355.0> Limiting to approx 65439 file handles (58893 sockets)
+2022-06-02 18:28:23.680000-04:00 [info] <0.356.0> FHC read buffering: OFF
+2022-06-02 18:28:23.680000-04:00 [info] <0.356.0> FHC write buffering: ON
+2022-06-02 18:28:23.680000-04:00 [info] <0.220.0> Running boot step worker_pool defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.340.0> Will use 24 processes for default worker pool
+2022-06-02 18:28:23.696000-04:00 [info] <0.340.0> Starting worker pool 'worker_pool' with 24 processes in it
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step database defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Successfully synced tables from a peer
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Successfully synced tables from a peer
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Successfully synced tables from a peer
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step database_sync defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step feature_flags defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step codec_correctness_check defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step external_infrastructure defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_event defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_registry defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_priority_queue defined by app rabbit
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2022-06-02 18:28:23.696000-04:00 [info] <0.220.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step kernel_ready defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.398.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step guid_generator defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_node_monitor defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.402.0> Starting rabbit_node_monitor
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step delegate_sup defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_fifo_dlx_sup defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step core_initialized defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step upgrade_queues defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step channel_tracking defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Setting up a table for channel tracking on this node: tracked_channel_on_node_rabbit@RabbitMQ
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Setting up a table for channel tracking on this node: tracked_channel_table_per_user_on_node_rabbit@RabbitMQ
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_channel_tracking_handler defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step connection_tracking defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@RabbitMQ
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@RabbitMQ
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Setting up a table for per-user connection counting on this node: tracked_connection_table_per_user_on_node_rabbit@RabbitMQ
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_definitions_hashing defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_policies defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_policy defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_stream_coordinator defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Management plugin: using rates mode 'basic'
+2022-06-02 18:28:23.712000-04:00 [info] <0.220.0> Running boot step recovery defined by app rabbit
+2022-06-02 18:28:23.712000-04:00 [info] <0.441.0> Making sure data directory 'c:/Users/Brandon/AppData/Roaming/RabbitMQ/db/rabbit@RabbitMQ-mnesia/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2022-06-02 18:28:23.712000-04:00 [info] <0.441.0> Starting message stores for vhost '/'
+2022-06-02 18:28:23.712000-04:00 [info] <0.446.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2022-06-02 18:28:23.727000-04:00 [info] <0.441.0> Started message store of type transient for vhost '/'
+2022-06-02 18:28:23.727000-04:00 [info] <0.450.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2022-06-02 18:28:23.727000-04:00 [info] <0.441.0> Started message store of type persistent for vhost '/'
+2022-06-02 18:28:23.727000-04:00 [info] <0.441.0> Recovering 0 queues of type rabbit_classic_queue took 6ms
+2022-06-02 18:28:23.727000-04:00 [info] <0.441.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms
+2022-06-02 18:28:23.727000-04:00 [info] <0.441.0> Recovering 0 queues of type rabbit_stream_queue took 0ms
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step empty_db_check defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Will not seed default virtual host and user: have definitions to load...
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step rabbit_looking_glass defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step background_gc defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step routing_ready defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step pre_flight defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step notify_cluster defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step networking defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step definition_import_worker_pool defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.340.0> Starting worker pool 'definition_import_pool' with 24 processes in it
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step cluster_name defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step direct_client defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step rabbit_maintenance_mode_state defined by app rabbit
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Creating table rabbit_node_maintenance_states for feature flag `maintenance_mode_status`
+2022-06-02 18:28:23.727000-04:00 [info] <0.220.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2022-06-02 18:28:23.727000-04:00 [info] <0.499.0> Resetting node maintenance status
+2022-06-02 18:28:23.727000-04:00 [error] <0.506.0> Could not find handle.exe, please install from sysinternals
+2022-06-02 18:28:23.743000-04:00 [info] <0.558.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2022-06-02 18:28:23.743000-04:00 [info] <0.586.0> Statistics database started.
+2022-06-02 18:28:23.743000-04:00 [info] <0.585.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2022-06-02 18:28:23.743000-04:00 [info] <0.499.0> Ready to start client connection listeners
+2022-06-02 18:28:23.743000-04:00 [info] <0.615.0> started TCP listener on [::]:5672
+2022-06-02 18:28:23.743000-04:00 [info] <0.633.0> started TCP listener on 0.0.0.0:5672
+2022-06-02 18:28:23.837000-04:00 [info] <0.499.0> Server startup complete; 4 plugins started.
+2022-06-02 18:28:23.837000-04:00 [info] <0.499.0>  * rabbitmq_top
+2022-06-02 18:28:23.837000-04:00 [info] <0.499.0>  * rabbitmq_management
+2022-06-02 18:28:23.837000-04:00 [info] <0.499.0>  * rabbitmq_web_dispatch
+2022-06-02 18:28:23.837000-04:00 [info] <0.499.0>  * rabbitmq_management_agent
+2022-06-02 18:28:28.792000-04:00 [info] <0.640.0> accepting AMQP connection <0.640.0> (172.22.48.1:58299 -> 172.22.52.124:5672)
+2022-06-02 18:28:28.807000-04:00 [info] <0.640.0> connection <0.640.0> (172.22.48.1:58299 -> 172.22.52.124:5672): user 'guest' authenticated and granted access to vhost '/'
+2022-06-02 18:28:28.839000-04:00 [notice] <0.665.0> queue 'main' in vhost '/': candidate -> leader in term: 1 machine version: 2
+2022-06-02 18:28:28.839000-04:00 [info] <0.649.0> ra: started cluster %2F_main with 1 servers
+2022-06-02 18:28:28.839000-04:00 [info] <0.649.0> 0 servers failed to start: []
+2022-06-02 18:28:28.839000-04:00 [info] <0.649.0> Leader: {'%2F_main',rabbit@RabbitMQ}
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0> ** Generic server <0.654.0> terminating
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0> ** Last message in was {'$gen_cast',
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            {method,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                {'basic.publish',0,<<>>,<<"main">>,false,false},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                {content,60,none,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                    <<0,0>>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                    rabbit_framing_amqp_0_9_1,[]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                flow}}
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0> ** When Server state == {ch,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {conf,running,rabbit_framing_amqp_0_9_1,2,<0.640.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           <0.652.0>,<0.640.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           <<"172.22.48.1:58299 -> 172.22.52.124:5672">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           undefined,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           {user,<<"guest">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            [administrator],
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            [{rabbit_auth_backend_internal,none}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           <<"/">>,<<>>,<0.641.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           [{<<"publisher_confirms">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            {<<"exchange_exchange_bindings">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            {<<"basic.nack">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            {<<"consumer_cancel_notify">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            {<<"connection.blocked">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                            {<<"authentication_failure_close">>,bool,true}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           none,0,134217728,1800000,#{},1000000000},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {lstate,<0.653.0>,false},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          none,2,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {0,[],[]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {state,#{},erlang},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          #{},#{},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {state,fine,5000,#Ref<0.1053933050.4161273858.60329>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          true,1,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_confirms,undefined,#{}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          [],[],none,flow,[],
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_queue_type,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           #{{resource,<<"/">>,queue,<<"main">>} =>
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              {ctx,rabbit_classic_queue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                               {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                               {rabbit_classic_queue,<0.658.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                #{}}}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           #{}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          #Ref<0.1053933050.4161273858.60325>,false}
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0> ** Reason for termination ==
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0> ** {function_clause,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>        [{rabbit_classic_queue,update,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{amqqueue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  true,false,none,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  [{<<"x-queue-type">>,longstr,<<"quorum">>}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  {'%2F_main',rabbit@RabbitMQ},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  [],[],[],undefined,undefined,[],[],live,0,[],<<"/">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  #{user => <<"guest">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  rabbit_quorum_queue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  #{nodes => [rabbit@RabbitMQ]}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>              {rabbit_classic_queue,<0.658.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                  #{}}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{file,"rabbit_classic_queue.erl"},{line,160}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>         {rabbit_queue_type,get_ctx_with,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{file,"rabbit_queue_type.erl"},{line,575}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>         {rabbit_queue_type,'-deliver0/3-fun-2-',3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{file,"rabbit_queue_type.erl"},{line,499}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>         {lists,foldl,3,[{file,"lists.erl"},{line,1350}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>         {rabbit_queue_type,deliver0,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{file,"rabbit_queue_type.erl"},{line,496}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>         {rabbit_queue_type,deliver,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{file,"rabbit_queue_type.erl"},{line,481}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>         {rabbit_channel,deliver_to_queues,2,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{file,"rabbit_channel.erl"},{line,2180}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>         {rabbit_channel,handle_method,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>             [{file,"rabbit_channel.erl"},{line,1328}]}]}
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0> 
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>   crasher:
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     initial call: rabbit_channel:init/1
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     pid: <0.654.0>
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     registered_name: []
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     exception exit: {function_clause,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                         [{rabbit_classic_queue,update,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{amqqueue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   true,false,none,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   [{<<"x-queue-type">>,longstr,<<"quorum">>}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   {'%2F_main',rabbit@RabbitMQ},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   [],[],[],undefined,undefined,[],[],live,0,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   [],<<"/">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   #{user => <<"guest">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   rabbit_quorum_queue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   #{nodes => [rabbit@RabbitMQ]}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                               {rabbit_classic_queue,<0.658.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                                   #{}}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{file,"rabbit_classic_queue.erl"},{line,160}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_queue_type,get_ctx_with,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{file,"rabbit_queue_type.erl"},{line,575}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_queue_type,'-deliver0/3-fun-2-',3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{file,"rabbit_queue_type.erl"},{line,499}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {lists,foldl,3,[{file,"lists.erl"},{line,1350}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_queue_type,deliver0,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{file,"rabbit_queue_type.erl"},{line,496}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_queue_type,deliver,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{file,"rabbit_queue_type.erl"},{line,481}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_channel,deliver_to_queues,2,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{file,"rabbit_channel.erl"},{line,2180}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          {rabbit_channel,handle_method,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                              [{file,"rabbit_channel.erl"},{line,1328}]}]}
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>       in function  gen_server2:terminate/3 (gen_server2.erl, line 1183)
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     ancestors: [<0.651.0>,<0.644.0>,<0.639.0>,<0.638.0>,<0.621.0>,<0.620.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   <0.619.0>,<0.617.0>,<0.616.0>,rabbit_sup,<0.220.0>]
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     message_queue_len: 0
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     messages: []
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     links: [<0.651.0>]
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     dictionary: [{permission_cache,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                       [{{resource,<<"/">>,exchange,<<>>},#{},write},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                        {{resource,<<"/">>,queue,<<"main">>},#{},read}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {msg_size_for_gc,0},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {permission_cache_can_expire,false},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {credit_flow_default_credit,{400,200}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {guid,{{3496580628,3485839439,2610615309,2825988762},0}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {channel_operation_timeout,15000},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {{credit_to,<0.640.0>},199},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {process_name,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                       {rabbit_channel,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                           {<<"172.22.48.1:58299 -> 172.22.52.124:5672">>,2}}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {{queue_stats,{resource,<<"/">>,queue,<<"main">>}},none},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                   {rand_seed,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                       {#{jump => #Fun<rand.3.34006561>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          max => 288230376151711743,
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                          next => #Fun<rand.5.34006561>,type => exsplus},
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>                        [161791490450514810|270500709446838946]}}]
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     trap_exit: true
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     status: running
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     heap_size: 10958
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     stack_size: 28
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>     reductions: 48161
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0>   neighbours:
+2022-06-02 18:28:28.839000-04:00 [error] <0.654.0> 
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0> Error on AMQP connection <0.640.0> (172.22.48.1:58299 -> 172.22.52.124:5672, vhost: '/', user: 'guest', state: running), channel 2:
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>  {function_clause,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>     [{rabbit_classic_queue,update,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>          [{amqqueue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               true,false,none,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               [{<<"x-queue-type">>,longstr,<<"quorum">>}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               {'%2F_main',rabbit@RabbitMQ},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               [],[],[],undefined,undefined,[],[],live,0,[],<<"/">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               #{user => <<"guest">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               rabbit_quorum_queue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               #{nodes => [rabbit@RabbitMQ]}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>           {rabbit_classic_queue,<0.658.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>               #{}}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>          [{file,"rabbit_classic_queue.erl"},{line,160}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>      {rabbit_queue_type,get_ctx_with,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>          [{file,"rabbit_queue_type.erl"},{line,575}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>      {rabbit_queue_type,'-deliver0/3-fun-2-',3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>          [{file,"rabbit_queue_type.erl"},{line,499}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>      {lists,foldl,3,[{file,"lists.erl"},{line,1350}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>      {rabbit_queue_type,deliver0,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>          [{file,"rabbit_queue_type.erl"},{line,496}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>      {rabbit_queue_type,deliver,3,[{file,"rabbit_queue_type.erl"},{line,481}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>      {rabbit_channel,deliver_to_queues,2,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>          [{file,"rabbit_channel.erl"},{line,2180}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>      {rabbit_channel,handle_method,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.640.0>          [{file,"rabbit_channel.erl"},{line,1328}]}]}
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     supervisor: {<0.651.0>,rabbit_channel_sup}
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     errorContext: child_terminated
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     reason: {function_clause,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                 [{rabbit_classic_queue,update,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{amqqueue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           true,false,none,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           [{<<"x-queue-type">>,longstr,<<"quorum">>}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           {'%2F_main',rabbit@RabbitMQ},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           [],[],[],undefined,undefined,[],[],live,0,[],
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           <<"/">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           #{user => <<"guest">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           rabbit_quorum_queue,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           #{nodes => [rabbit@RabbitMQ]}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                       {rabbit_classic_queue,<0.658.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                           #{}}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{file,"rabbit_classic_queue.erl"},{line,160}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                  {rabbit_queue_type,get_ctx_with,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{file,"rabbit_queue_type.erl"},{line,575}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                  {rabbit_queue_type,'-deliver0/3-fun-2-',3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{file,"rabbit_queue_type.erl"},{line,499}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                  {lists,foldl,3,[{file,"lists.erl"},{line,1350}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                  {rabbit_queue_type,deliver0,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{file,"rabbit_queue_type.erl"},{line,496}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                  {rabbit_queue_type,deliver,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{file,"rabbit_queue_type.erl"},{line,481}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                  {rabbit_channel,deliver_to_queues,2,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{file,"rabbit_channel.erl"},{line,2180}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                  {rabbit_channel,handle_method,3,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                      [{file,"rabbit_channel.erl"},{line,1328}]}]}
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     offender: [{pid,<0.654.0>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {id,channel},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {mfargs,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                    {rabbit_channel,start_link,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                        [2,<0.640.0>,<0.652.0>,<0.640.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         <<"172.22.48.1:58299 -> 172.22.52.124:5672">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         rabbit_framing_amqp_0_9_1,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         {user,<<"guest">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                             [administrator],
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                             [{rabbit_auth_backend_internal,none}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         <<"/">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         [{<<"publisher_confirms">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"exchange_exchange_bindings">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"basic.nack">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"consumer_cancel_notify">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"connection.blocked">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"authentication_failure_close">>,bool,true}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         <0.641.0>,<0.653.0>]}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {restart_type,intrinsic},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {shutdown,70000},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {child_type,worker}]
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0> Non-AMQP exit reason '{function_clause,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                           [{rabbit_classic_queue,update,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{amqqueue,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     true,false,none,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     [{<<"x-queue-type">>,longstr,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                       <<"quorum">>}],
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     {'%2F_main',rabbit@RabbitMQ},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     [],[],[],undefined,undefined,[],[],live,0,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     [],<<"/">>,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     #{user => <<"guest">>},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     rabbit_quorum_queue,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     #{nodes => [rabbit@RabbitMQ]}},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                 {rabbit_classic_queue,<0.658.0>,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     {resource,<<"/">>,queue,<<"main">>},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                     #{}}],
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{file,"rabbit_classic_queue.erl"},{line,160}]},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                            {rabbit_queue_type,get_ctx_with,3,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{file,"rabbit_queue_type.erl"},{line,575}]},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                            {rabbit_queue_type,'-deliver0/3-fun-2-',3,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{file,"rabbit_queue_type.erl"},{line,499}]},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                            {lists,foldl,3,[{file,"lists.erl"},{line,1350}]},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                            {rabbit_queue_type,deliver0,3,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{file,"rabbit_queue_type.erl"},{line,496}]},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                            {rabbit_queue_type,deliver,3,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{file,"rabbit_queue_type.erl"},{line,481}]},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                            {rabbit_channel,deliver_to_queues,2,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{file,"rabbit_channel.erl"},{line,2180}]},
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                            {rabbit_channel,handle_method,3,
+2022-06-02 18:28:28.839000-04:00 [warning] <0.640.0>                                [{file,"rabbit_channel.erl"},{line,1328}]}]}'
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     supervisor: {<0.651.0>,rabbit_channel_sup}
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     errorContext: shutdown
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     reason: reached_max_restart_intensity
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>     offender: [{pid,<0.654.0>},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {id,channel},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {mfargs,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                    {rabbit_channel,start_link,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                        [2,<0.640.0>,<0.652.0>,<0.640.0>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         <<"172.22.48.1:58299 -> 172.22.52.124:5672">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         rabbit_framing_amqp_0_9_1,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         {user,<<"guest">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                             [administrator],
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                             [{rabbit_auth_backend_internal,none}]},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         <<"/">>,
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         [{<<"publisher_confirms">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"exchange_exchange_bindings">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"basic.nack">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"consumer_cancel_notify">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"connection.blocked">>,bool,true},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                          {<<"authentication_failure_close">>,bool,true}],
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                         <0.641.0>,<0.653.0>]}},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {restart_type,intrinsic},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {shutdown,70000},
+2022-06-02 18:28:28.839000-04:00 [error] <0.651.0>                {child_type,worker}]
+2022-06-02 18:28:28.854000-04:00 [info] <0.640.0> closing AMQP connection <0.640.0> (172.22.48.1:58299 -> 172.22.52.124:5672, vhost: '/', user: 'guest')
