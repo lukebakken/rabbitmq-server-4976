@@ -22,6 +22,6 @@ channel.QueueDelete("main");
 channel.QueueDeclare("main", true, false, false, arguments);
 
 secondChannel.BasicPublish(string.Empty, "main", secondChannel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
-secondChannel.WaitForConfirmsOrDie();
+secondChannel.WaitForConfirmsOrDie(); //throws AlreadyClosedException here
 
 channel.QueueDelete("main");
