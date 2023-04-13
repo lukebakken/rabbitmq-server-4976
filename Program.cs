@@ -1,28 +1,43 @@
-﻿using RabbitMQ.Client;
+﻿using System.Diagnostics;
+using RabbitMQ.Client;
+
+const string queueName = "rabbitmq-server-4976";
 
 var factory = new ConnectionFactory();
+factory.Port = 5672;
+factory.HostName = "shostakovich";
+factory.UserName = "guest";
+factory.Password = "guest";
 
-var arguments = new Dictionary<string, object> { { "x-queue-type", "quorum" } };
+var quoumQueueArguments = new Dictionary<string, object> { { "x-queue-type", "quorum" } };
 using var connection = factory.CreateConnection();
 
-using var channel = connection.CreateModel();
-channel.ConfirmSelect();
+using (var channel = connection.CreateModel())
+{
+    channel.QueueDelete(queueName);
 
-//replace all secondChannel usage with channel and the code will work properly
-using var secondChannel = connection.CreateModel();
-secondChannel.ConfirmSelect();
+    channel.ConfirmSelect();
 
-channel.QueueDeclare("main", true, false, false); //create classic queue
-channel.BasicPublish(string.Empty, "main", channel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
-channel.WaitForConfirmsOrDie();
+    var declareResult = channel.QueueDeclare(queueName, true, false, false); //create classic queue
+    Debug.Assert(queueName.Equals(declareResult.QueueName));
 
-var message = secondChannel.BasicGet("main", false);
-secondChannel.BasicAck(message.DeliveryTag, false);
+    channel.BasicPublish(string.Empty, queueName, channel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
+    channel.WaitForConfirmsOrDie();
+}
 
-channel.QueueDelete("main");
-channel.QueueDeclare("main", true, false, false, arguments); //create quorum queue
+using (var secondChannel  = connection.CreateModel())
+{
+    secondChannel.ConfirmSelect();
 
-secondChannel.BasicPublish(string.Empty, "main", secondChannel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
-secondChannel.WaitForConfirmsOrDie(); //throws AlreadyClosedException here
+    var message = secondChannel.BasicGet(queueName, false);
+    secondChannel.BasicAck(message.DeliveryTag, false);
 
-channel.QueueDelete("main");
+    secondChannel.QueueDelete(queueName);
+    var declareResult = secondChannel.QueueDeclare(queueName, true, false, false, quoumQueueArguments); //create quorum queue
+    Debug.Assert(queueName.Equals(declareResult.QueueName));
+
+    secondChannel.BasicPublish(string.Empty, queueName, secondChannel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
+    secondChannel.WaitForConfirmsOrDie(); //throws AlreadyClosedException here
+
+    secondChannel.QueueDelete(queueName);
+}
