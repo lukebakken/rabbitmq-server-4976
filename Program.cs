@@ -5,7 +5,7 @@ const string queueName = "rabbitmq-server-4976";
 
 var factory = new ConnectionFactory();
 factory.Port = 5672;
-factory.HostName = "shostakovich";
+factory.HostName = "localhost";
 factory.UserName = "guest";
 factory.Password = "guest";
 
