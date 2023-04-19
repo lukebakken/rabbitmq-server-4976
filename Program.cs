@@ -21,7 +21,8 @@ using (var connection = factory.CreateConnection())
         var declareResult = channel.QueueDeclare(queueName, true, false, false); //create classic queue
         Debug.Assert(queueName.Equals(declareResult.QueueName));
 
-        channel.BasicPublish(string.Empty, queueName, channel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
+        var props = channel.CreateBasicProperties();
+        channel.BasicPublish(string.Empty, queueName, props, ReadOnlyMemory<byte>.Empty);
         channel.WaitForConfirmsOrDie();
     }
 
@@ -29,16 +30,24 @@ using (var connection = factory.CreateConnection())
     {
         secondChannel.ConfirmSelect();
 
+        // NB: adding the following fixes the issue as well
+        // var props0 = secondChannel.CreateBasicProperties();
+        // secondChannel.BasicPublish(string.Empty, queueName, props0, ReadOnlyMemory<byte>.Empty);
+        // secondChannel.WaitForConfirmsOrDie();
+
         // NB: commenting out the following two lines prevents the issue from happening,
         // or if you move it to use the first channel
         var message = secondChannel.BasicGet(queueName, false);
         secondChannel.BasicAck(message.DeliveryTag, false);
 
         secondChannel.QueueDelete(queueName);
+
         var declareResult = secondChannel.QueueDeclare(queueName, true, false, false, quoumQueueArguments); //create quorum queue
+        // var declareResult = secondChannel.QueueDeclare(queueName, true, false, false); //create classic queue
         Debug.Assert(queueName.Equals(declareResult.QueueName));
 
-        secondChannel.BasicPublish(string.Empty, queueName, secondChannel.CreateBasicProperties(), ReadOnlyMemory<byte>.Empty);
+        var props1 = secondChannel.CreateBasicProperties();
+        secondChannel.BasicPublish(string.Empty, queueName, props1, ReadOnlyMemory<byte>.Empty);
         secondChannel.WaitForConfirmsOrDie(); //throws AlreadyClosedException here
 
         secondChannel.QueueDelete(queueName);
